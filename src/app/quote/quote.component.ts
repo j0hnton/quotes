@@ -10,7 +10,7 @@ export class QuoteComponent implements OnInit {
 
     quotes = [
      new Quote('John','Where there is a will there is a way','Avicii',new Date(2018,3,14),0,0 ),
-     new Quote('Alex','Make your tomorrow better','Anonymous',new Date(2018,3,14),0,0 ),
+     new Quote('Alex','Make your tomorrow better','',new Date(2018,3,14),0,0 ),
      new Quote('John','A rastaman is a peaceful man','Joseph Hill',new Date(2018,3,14),0,0 )
 
 
