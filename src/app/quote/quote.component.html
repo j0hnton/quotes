@@ -1,0 +1,16 @@
+<h1>My Quotes</h1>
+
+<div class="container">
+
+    <div class="row">
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    </div>
+
+</div>
+
+<div *ngFor='let quote of quotes;let i = index' >
+  <h4  id="{{i}}" highlight>{{quote.quote}} -{{quote.completeDate|date|uppercase}}</h4>
+  <button  (click)='toogleDetails(i)' class="btn btn-success">Toogle Details</button>
+
+  <app-quote-details *ngIf="quote.showAuthor" [quote]='quote' (isComplete)= 'deleteQuote($event,i)' (isUp)='upVote($event, i)' (isDOwn)='downVote($event,i)'></app-quote-details>
+</div>

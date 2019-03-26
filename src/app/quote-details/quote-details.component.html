@@ -1,0 +1,7 @@
+<p>{{quote.author}}</p>
+<p>{{quote.publisher}}</p>
+
+<button class="vote"  class="btn btn-default"(click)='upQuote(true)' type="button" name="button"><img src="https://cdn0.iconfinder.com/data/icons/seo-marketing-hand-drawn-vol-3/52/like__up__vote__thumbs__favorite__rate__facebook-512.png"width=60 height=60><br> {{quote.likeVote}}</button>
+<button class="vote"  class="btn btn-default" (click)='downQuote(true)' type="button" name="button"><img src="https://cdn1.iconfinder.com/data/icons/ios-web-user-interface-hand-drawn-vol-6/512/Dislike_down_thumb_thumbs_vote-512.png" width=60 height=40><br>{{quote.dislikeVote}} </button>
+<br>
+<button class="btn btn-default"  (click) = 'quoteDelete(true)' type="button" name="button"><img src="http://warrensburg.k12.mo.us/iadventure/4320spring08/jennifergraves/trashcan2.gif" width=80 height=80></button>
